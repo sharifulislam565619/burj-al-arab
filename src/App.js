@@ -11,6 +11,7 @@ import Book from './components/Book/Book';
 import Header from './components/Header/Header';
 import AuthContext from './Context/AuthContext';
 import PrivateRoute from './components/Private/PrivateRoute';
+import Register from './components/Register/Register';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/register">
+            <Register />
           </Route>
           <PrivateRoute path="/book/:bedType">
             <Book />
